@@ -1,4 +1,4 @@
-package mehnat.karlo;
+package com.dkit.problem.pattern;
 
 public class DownDaimond06 {
 

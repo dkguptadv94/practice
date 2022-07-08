@@ -9,9 +9,9 @@ public class RemoveDuplicateChar {
 		String str="programming";
 
 		//Approach-1 java 8
-		StringBuilder sb1=new StringBuilder();
+		StringBuilder sb1=new StringBuilder(); 
 		str.chars().distinct().forEach(c->sb1.append((char)c));
-		System.out.println(sb1);
+		System.out.println("Approach-1 : "+sb1);
 
 		//Approach-1 
 		StringBuilder sb2=new StringBuilder();
@@ -22,18 +22,19 @@ public class RemoveDuplicateChar {
 				sb2.append(ch);
 			}
 		}
-		System.out.println(sb2); 
+		System.out.println("Approach-2 : "+sb2); 
 
 		//Approach-3
 		StringBuilder sb3=new StringBuilder();
 		Set<Character> set=new LinkedHashSet<>();
 		for(int i=0;i<str.length();i++) {
+			
 			set.add(str.charAt(i));
 		}
 		for(Character c:set) {
 			sb3.append(c);
 		}
-		System.out.println(sb3);
+		System.out.println("Approach-3 : "+sb3);
 	}
 
 }
