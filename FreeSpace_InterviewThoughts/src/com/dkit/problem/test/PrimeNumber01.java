@@ -13,14 +13,14 @@ public class PrimeNumber01 {
 				if(n%i==0) {
 					count++;
 				}//end if
-			}//end for
+			}//end for-i
 			if(count==2) {
 				al.add(n);
 			}
 			else {
 				al2.add(n);
 			}
-		}
+		}//end for-n
 		System.out.println("Non-prime No. :"+al2);
 		System.out.println("Prime No. :"+al);
 	}
